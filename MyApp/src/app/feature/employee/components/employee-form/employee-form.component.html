@@ -1,0 +1,43 @@
+<p>employee-form works!</p>
+
+<div class="form">
+    <form action="">
+        <div class="firstname">
+            <label for="firstname">Enter your First Name</label>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div class="lastname">
+            <label for="lastname">Enter your Last Name</label>
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="email">
+            <label for="email">Enter your Email</label>
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="phoneNo">
+            <label for="phoneNo">Enter your Phone Number</label>
+            <input type="number" placeholder="">
+        </div>
+        <div class="dateOfEmployment">
+            <label for="dateOfEmployment">Enter your First Name</label>
+            <input type="date">
+        </div>
+        <div class="gender">
+            <label for="">Gender</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+        </div>
+        <div class="department">
+            <label for="department">Choose Department</label>
+            <select name="department" id="department">
+                <option value="angular">angular</option>
+                <option value=".net">.NET</option>
+                <option value="testing">Testing</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+<button routerLink="/employee/employee-list">click to view emp list</button>
