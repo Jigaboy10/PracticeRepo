@@ -12,6 +12,7 @@ import { EmployeeService } from '../../services/employee.service';
 export class EmployeeFormComponent implements OnInit {
 
   employeeForm: FormGroup;
+  empToEdit: number;
   departmentDetails: Department[];
   constructor(private userFormBuilder: FormBuilder,
     private employeeService: EmployeeService,
@@ -47,10 +48,19 @@ export class EmployeeFormComponent implements OnInit {
     })
 
   }
+
+  saveEmployee(id?: number) {
+    if(id) {
+      this.updateEmployee(id);
+    } else {
+      this.addEmployee();
+    }
+  }
    
-  public editEmployee(id:number){
+  public editEmployee(id: number){
     this.employeeService.getById(id).subscribe((res:Employee)=>{
       this.employeeForm.patchValue(res);
+      this.empToEdit = res.id;
     })
   }
 
@@ -59,6 +69,18 @@ export class EmployeeFormComponent implements OnInit {
     this.employeeService.addEmployee(employeeData).subscribe((res: Employee) => {
       this.router.navigateByUrl('/employee/employee-list')
     })
+  }
+
+  public updateEmployee(id: number) {
+    const newEmployeeData = this.employeeForm.value;
+    newEmployeeData.id = this.empToEdit;
+    this.employeeService.editEmployee(newEmployeeData).subscribe((res: Employee) => {
+      this.router.navigateByUrl('/employee/employee-list')
+    })
+  }
+
+  onReset() {
+    this.employeeForm.reset();
   }
 
   get getValue()

@@ -1,3 +1,18 @@
-input .ng-touched .ng-valid{
-    border: 1px solid red;
+.form{
+    // margin: .75rem;
+    // padding: .75rem;
+    color: #2c4d53;
+
+}
+.formContainer{
+    margin: .75rem;
+    padding: .75rem;
+    .btnContainer{
+        display: flex;
+        justify-content: right;
+    }
+}
+.btn{
+    padding: 5px 15px;
+    margin: 5px;
 }

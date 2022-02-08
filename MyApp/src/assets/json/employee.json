@@ -21,8 +21,38 @@
       "phoneNo": 9876543211,
       "dateOfEmployment": "2022-02-17",
       "gender": "male",
-      "department": "2",
+      "department": "1",
       "id": 1
+    },
+    {
+      "firstname": "hiren",
+      "lastname": "tabderl",
+      "email": "as@ds.com",
+      "phoneNo": 9876543211,
+      "dateOfEmployment": "2022-02-17",
+      "gender": "male",
+      "department": "2",
+      "id": 2
+    },
+    {
+      "firstname": "tanmay",
+      "lastname": "Bhatt",
+      "email": "t@b.com",
+      "phoneNo": 8976543211,
+      "dateOfEmployment": "2022-02-26",
+      "gender": "male",
+      "department": "1",
+      "id": 3
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aaa",
+      "email": "aa@aa",
+      "phoneNo": 9876543211,
+      "dateOfEmployment": "2022-02-20",
+      "gender": "male",
+      "department": "1",
+      "id": 4
     }
   ]
 }

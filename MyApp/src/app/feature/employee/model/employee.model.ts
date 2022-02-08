@@ -10,7 +10,7 @@ export interface Employee {
     phoneNo: string,
     dateOfEmployment: string,
     gender: string,
-    department: string
+    department: number
 
 }
 

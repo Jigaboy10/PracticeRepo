@@ -1,0 +1,17 @@
+.list_container{
+    margin: .75rem;
+    padding: .75rem;
+    
+    .searchContainer{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+.employeeList{
+    text-align: center;
+}
+.btn{
+    padding: 5px 15px;
+    margin: 5px;
+}

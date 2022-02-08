@@ -3,16 +3,39 @@
     height: 100px;
 }
 
+.container{
+    background-color: #8bb8d7;
+    height: 100%;
+}
 .wrapper{
-
+    // margin: 1rem;
+    padding: 1rem;
     height: 100%;
     display: flex;
+    border: 1px solid #d3f7fa;
+    overflow: hidden;
+    // background-color: #d3f7fa;
+    
     .sidenav{
         width: 300px;
-        
+        background-color: #ffffff;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-right :2px solid #8bb8d7
     }
     .main{
         flex-grow: 1;
+        background-color: #d3f7fa;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        .view{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: .75rem;
+            padding: .75rem;
+            width: 700px;
+        }
     }
 }
 

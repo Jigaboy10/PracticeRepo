@@ -27,7 +27,10 @@ export class EmployeeService {
   addEmployee(employee:Employee): Observable<Employee> {
     return this.http.post<Employee>(`${this.apiLink}/Employee`,employee);
   }
-  deleteEmployee(id:number): Observable<any> {
-    return this.http.delete<any>(`${this.apiLink}/Employee/${id}`);
+  editEmployee(employee:Employee): Observable<Employee> {
+    return this.http.put<Employee>(`${this.apiLink}/Employee/${employee.id}`,employee);
+  }
+  deleteEmployee(id:number): Observable<Employee> {
+    return this.http.delete<Employee>(`${this.apiLink}/Employee/${id}`);
   }
 }
