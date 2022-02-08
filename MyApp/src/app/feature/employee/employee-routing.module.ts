@@ -8,22 +8,20 @@ import { EmployeeComponent } from './employee.component';
 
 const routes: Routes = [
   {
-    path:'',
-    children:[
+    path: '',
+    children: [
+      { path: '', redirectTo: 'employee-list', pathMatch: 'full' },
       {
-        path:'', component: EmployeeListComponent
+        path: '', component: EmployeeListComponent
       },
       {
-        path:'employee-list', component: EmployeeListComponent
+        path: 'employee-list', component: EmployeeListComponent
       },
       {
-        path:'employee-form', component: EmployeeFormComponent
+        path: 'employee-form', component: EmployeeFormComponent
       },
       {
-        path:'admin-view', component: AdminViewComponent
-      },
-      {
-        path:'user-view', component: UserViewComponent
+        path: 'employee-form/:id', component: EmployeeFormComponent
       },
 
     ]
