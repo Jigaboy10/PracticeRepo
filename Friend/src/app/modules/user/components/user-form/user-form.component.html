@@ -1,0 +1,50 @@
+{{userForm.value | json}}
+
+<form [formGroup]="userForm">
+    <div class="form-group">
+        <label for="fn">First Name</label>
+        <input type="text" class="form-control" id="fn" placeholder="Enter First name" formControlName="firstName">
+    </div>
+    <div class="form-group">
+        <label for="mn">Middle Name</label>
+        <input type="text" class="form-control" id="mn" placeholder="Enter middle name" formControlName="middleName">
+    </div>
+    <div class="form-group">
+        <label for="ln">Last Name</label>
+        <input type="text" class="form-control" id="ln" placeholder="Enter last name" formControlName="lastName">
+    </div>
+    
+    <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" value="male" formControlName="gender" >Male
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" value="female" formControlName="gender" >Female
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" value="trans" formControlName="gender">Trans-gender
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        
+        <label for="age">Age: </label>
+        <input type="number" id="age" class="form-control" placeholder="Enter Age" formControlName="age">
+    </div>
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control" name="" id="dob" formControlName="dateOfBirth">
+    </div>
+    
+    <div class="form-group">
+        <label for="hobbies">Hobbies</label>
+        <input type="text" class="" id="hobbies" placeholder="Enter hobbie"> <button type="button">+</button>
+    </div>
+    
+</form>
