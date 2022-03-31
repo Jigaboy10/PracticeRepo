@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* project based scss file */
+
+@import './assets/scss/base/index';
+
+/* bootstrap based scss file */
+
+@import './assets/scss/vendor/bootstrap-base';
+
+@import './assets/scss/vendor/bootstrap-components';
+
+/* project based scss file */
+
+@import './assets/scss/component/index';
+
+@import './assets/scss/layout/index';
+
+@import './assets/scss/utilities/index';
+
+@import '@angular/cdk/overlay-prebuilt.css';
