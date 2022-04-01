@@ -8,6 +8,7 @@ import { UserListPresentationComponent } from './user-list-container/user-list-p
 import { MVPService } from './mvp.service';
 import { UserFormPresentationComponent } from './user-list-container/user-list-presentation/user-form-presentation/user-form-presentation.component';
 import { SharedModule } from '../shared/shared.module';
+import { UserFilterPresentationComponent } from './user-list-container/user-list-presentation/user-filter-presentation/user-filter-presentation.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from '../shared/shared.module';
     MVPPracticeComponent,
     UserListContainerComponent,
     UserListPresentationComponent,
-    UserFormPresentationComponent
+    UserFormPresentationComponent,
+    UserFilterPresentationComponent
   ],
   imports: [
     CommonModule,

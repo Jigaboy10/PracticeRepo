@@ -1,9 +1,9 @@
 <div class=" user-form bg-white  rounded-3 p-5">
-
+<h3>{{ userFormTitle}}</h3>
     {{this.userForm.value | json}}
     <h3 class="text-center text-inverse">Form</h3>
 <hr>
-<form class="container" id="needs-validation" [formGroup]="userForm">
+<form class="container" id="needs-validation" [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <div class="row">
         <div class="col-lg-6 col-sm-6 col-12">
             <div class="form-group">

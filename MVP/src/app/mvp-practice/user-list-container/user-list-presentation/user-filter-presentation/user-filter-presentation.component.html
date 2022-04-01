@@ -1,0 +1,94 @@
+<div class=" user-form bg-white  rounded-3 p-5 h-100">
+
+    <h3 class="text-center text-inverse">Filter</h3>
+    
+    <button type="button" (click)="onClose()" class="btn btn-danger">X</button>
+    <hr>
+    <form class="container" id="needs-validation" [formGroup]="filteredForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label class="text-inverse" for="validationCustom01">First Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                        formControlName="firstName">
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label class="text-inverse" for="validationCustom02">Last Name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                        formControlName="lastName">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+                <div class="form-group">
+                    <label class="text-inverse" for="inputphoneNo4">PhoneNo</label>
+                    <input type="text" class="form-control" id="inputphoneNo4" placeholder="Phone No"
+                        formControlName="phoneNo">
+                    <div class="invalid-feedback">
+                        Please provide a valid no.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label class="text-inverse" for="age">Age</label>
+                    <input type="number" class="form-control" id="age" placeholder="Age" formControlName="age">
+                    <div class="invalid-feedback">
+                        Please provide a valid password.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <span class="col text-nowrap">
+                Select Gender:
+
+            </span>
+            <div class="col">
+
+                <div class="form-group">
+                    <label class="custom-control custom-radio ">
+                        <input id="radioStacked1" name="gender" type="radio" class="custom-control-input"
+                            formControlName="gender" value="Male">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description px-2">Male</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="form-group">
+                    <label class="custom-control custom-radio ">
+                        <input id="radioStacked2" name="gender" type="radio" class="custom-control-input"
+                            formControlName="gender" value="Female">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description px-2">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <div class="col"> -->
+                <div class="form-group">
+                    <label class="custom-control custom-radio ">
+                        <input id="radioStacked2" name="gender" type="radio" class="custom-control-input"
+                            formControlName="gender" value="Trans-Gender">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description px-2 text-nowrap">Trans-Gender</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-12 text-center">
+                <button class="btn btn-info" type="submit">Submit form</button>
+            </div>
+        </div>
+    </form>
+    <div class="invisible">
+        1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+    </div>
+</div>

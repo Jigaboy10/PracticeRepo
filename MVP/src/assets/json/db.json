@@ -9,11 +9,99 @@
   "user": [
     {
       "id": 1,
-      "firstName": "Jay",
-      "lastName": "Desai",
-      "age": 23,
+      "firstName": "sasdvs",
+      "lastName": "fd",
+      "gender": "",
+      "age": "",
+      "phoneNo": ""
+    },
+    {
+      "firstName": "aa",
+      "lastName": "",
+      "gender": "",
+      "age": "",
+      "phoneNo": "",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "firstName": "aa",
+      "lastName": "",
+      "gender": "Female",
+      "age": "",
+      "phoneNo": ""
+    },
+    {
+      "id": 4,
+      "firstName": "jigar",
+      "lastName": "Bhanushali",
+      "gender": "",
+      "age": "",
+      "phoneNo": ""
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "",
+      "age": 888,
+      "phoneNo": "",
+      "id": 5
+    },
+    {
+      "firstName": "jigar",
+      "lastName": "",
+      "gender": "Female",
+      "age": "",
+      "phoneNo": "",
+      "id": 6
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "",
+      "age": "",
+      "phoneNo": "",
+      "id": 7
+    },
+    {
+      "firstName": "asfsdafa",
+      "lastName": "",
+      "gender": "",
+      "age": "",
+      "phoneNo": "",
+      "id": 8
+    },
+    {
+      "firstName": "",
+      "lastName": "",
       "gender": "Male",
-      "phoneNo": "6548789"
+      "age": "",
+      "phoneNo": "",
+      "id": 9
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "Trans-Gender",
+      "age": "",
+      "phoneNo": "",
+      "id": 10
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "Trans-Gender",
+      "age": "",
+      "phoneNo": "",
+      "id": 11
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "gender": "",
+      "age": "",
+      "phoneNo": "",
+      "id": 12
     }
   ]
 }
