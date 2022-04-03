@@ -30,14 +30,13 @@ export class UserFilterPresentationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClose() {
+  OnClose() {
     this.close.emit();
-
   }
 
   onSubmit() {
     this.filterService.submitForm(this.filteredForm)
-    this.onClose();
+    this.OnClose()
     this.filterFormData.emit(this.filteredForm);
 
   }

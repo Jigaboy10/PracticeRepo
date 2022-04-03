@@ -2,7 +2,8 @@
 
     <h3 class="text-center text-inverse">Filter</h3>
     
-    <button type="button" (click)="onClose()" class="btn btn-danger">X</button>
+    <!-- <button type="button" (click)="onClose()" class="btn btn-danger">X</button> -->
+    <button type="button" class="btn btn-danger" (click)="OnClose()">X</button>
     <hr>
     <form class="container" id="needs-validation" [formGroup]="filteredForm" (ngSubmit)="onSubmit()">
         <div class="row">

@@ -11,6 +11,7 @@ import { UserFormPresentationComponent } from '../user-list-presentation/user-fo
 export class UserListPresenterService {
 
   private _userFromData: Subject<User>;
+
   public userFromData$: Observable<User>;
 
   private _filteredData: Subject<User[]>;
@@ -68,46 +69,42 @@ export class UserListPresenterService {
       this.overlayRef.detach())
 
   }
-
-  public filteredData(filteredData: User[]) {
-    this._filteredData.next(filteredData);
-  }
-
-
+  // filter overlay
+  
    openFilterForm( userList: User[]) {
     this.overlayRef = this.overlay.create({
       hasBackdrop: true,
       positionStrategy: this.overlay
-        .position()
+      .position()
         .global()
         .right(),
 
     });
-
+    
     const component = new ComponentPortal(UserFilterPresentationComponent);
     this.filterComponentRef = this.overlayRef.attach(component);
-
- 
-
+    
+    
+    
     this.filterComponentRef.instance.filterFormData.subscribe((data) => {
-      this.myfilter(userList, data)
-
+      this.myfilter(userList!, data)
+      
       // console.log("from list presentor",data.value)
     })
-
-    this.componentRef.instance.close.subscribe(() => {
-      this.overlayRef.detach()
-    })
+     this.filterComponentRef.instance.close.subscribe(() =>
+     this.overlayRef.detach()
+     )
+    
 
     this.overlayRef.backdropClick().subscribe(() =>
-      this.overlayRef.detach())
+    this.overlayRef.detach())
   }
-
+  
   myfilter(list: User[], filters: any) {
-    console.log(filters.value);
+    console.log(filters.value)
     if (filters.value.gender) {
       list = list.filter(user => {
-        console.log(user.gender);
+        // console.log(user.gender);
         return user.gender?.toLowerCase() == filters.value.gender.toLowerCase();
       })
     }
@@ -118,7 +115,11 @@ export class UserListPresenterService {
 
   getfilterValue(data: any) {
     console.log("from list presentor", data)
-
+    
   }
+  
+    public filteredData(filteredData: User[]) {
+      this._filteredData.next(filteredData);
+    }
 }
 

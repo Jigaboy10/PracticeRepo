@@ -45,6 +45,10 @@ export class UserListPresentationComponent implements OnInit {
     
     this.searchText = ''
 
+    this.userListPresenterService.filteredData$.subscribe((filteredData: User[]) =>{
+      this.usersList= filteredData
+    })
+
   }
 
   ngOnInit(): void {
